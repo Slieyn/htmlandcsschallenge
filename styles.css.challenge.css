@@ -1,0 +1,41 @@
+div.circle{
+    margin:20px;
+    float: left;
+}
+
+div#First{
+      background-color: aqua;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+}
+
+div#Second{
+    background-color: crimson;
+    height: 100px;
+    width: 100px;
+    float: left;
+    border-radius: 50%;
+    animation-name: second;
+}
+
+div#Third{
+    background-color: darkblue;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    transform-origin:left;
+    position:relative;
+    animation-name: transform;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+
+    
+}
+@keyframes transform {
+    100% {transform: scaleX(3) scaleY(3) rotate(45deg) translateX(50px) translateY(50px);}
+}
+
+
+
